@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVKD0VG19K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PVKD0VG19K');
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/site.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top topnav">
+            <div class="container">
+                <a href="https://sonysugar.co.ke" target="_blank" class="navbar-brand active">
+                    
+                   SonySugar on the Web
+                </a>
+                <div class="collapse navbar-collapse id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="{% url 'homepage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://128.1.1.190/lansupport/start.asp?" target="_blank">ICT Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://105.27.148.34:8080" target="_blank">SonySugar Weather Station</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    <div class="navbar navbar-expand-sm navbar-dark fixed-bottom bg-light" id="footer">
+            <div class="col md-2 " >
+                <div class="row">
+                    <p><img src="{% static '/images/sony_logo.png' %}" alt="" width="120" height="100" style="float: left;"></p>
+                </div>
+                <div class="row text">
+                    <p><strong><small>South Nyanza Sugar Company Limited.</small>
+                    <br><small>All Rights Reseved. &copy;2020</small></strong></p>
+                </div>
+            </div>
+            <div class="col md-8 text-center" style="display: flex;">
+                <p><small>This page has been viewed {{num_visits}} times.</small></p>
+            </div>
+            <div class="col md-2">
+                <div class="row">
+                    <p><img src="{% static '/images/sony_brand.jpg' %}" alt="" width="120" height="100" style="float: right;"></p>
+                </div>
+                <div class="row">
+                    <p><input type="hidden" value="1213"></p>
+                    <p><input type="hidden" value="1234"></p>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
