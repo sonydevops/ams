@@ -31,6 +31,8 @@ body {
     margin-bottom: 65px;
     padding: 2rem;
     margin: 20px;
+    background-image: url("../../images/bg3.jpg");
+
 }
 
 .column {
@@ -64,3 +66,4 @@ h1, h2 {
 p {
     color: #51362F;
 }
+

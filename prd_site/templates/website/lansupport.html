@@ -1,9 +1,131 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Welcome to SonySugar LAN Support {% endblock %}
 {% block content %}
     <div class="container">
-        <h1 style="margin: 50px;">Welcome to ICT LAN Support</h1>
-        <iframe src="http://128.1.1.190/lansupport/start.asp?" width="1000" height="600"  sandbox></iframe>
-
+      <img src="{% static '/images/bg1.jpeg' %}" alt="" width="100%" height="100px">
+        <h1 style="margin: 50px;">Welcome to ICT Online Support</h1>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4">
+            <p style="color: aliceblue; tx">A better tech support experience</p>
+            <p>Any device, any issue, anytime</p>
+            <p>Anyway you want, satisfaction guaranteed*</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="{% static '/images/IT-support.jpg' %}" alt="IT Support" width="500px" height="500px">
+          </div>
+          <div class="col-sm-4">
+            <img src="{% static '/images/IT_support.jpg' %}" alt="IT Support" width="500px" height="500px">
+          </div>
+        </div>
     </div>
+    <br>
+    <h3>What makes SonySugar ICT Services Different:</h3>
+    <p>We collaborate with our clients to ensure their IT needs are met and systems run at peak performance and in alignment with the overall business strategic goals.</p>
+    <p>Achieving business goals is extremely challenging if your IT issues are not addressed, which is why our experienced team of IT professionals will  be there to assist our esteemed customers 24/7/365 </p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" style="text-align: center;">
+          <div class="card h-100">
+            <img src="{% static '/images/ntwrk1.png' %}" class="card-img-top" width="300" height="250" alt="network">
+            <div class="card-body">
+              <h5 class="card-title">Network and Infrastructure Connectivity</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;" >
+          <div class="card h-100">
+            <img src="{% static '/images/erp.png'%}" class="card-img-top" alt="applications" width="300" height="250">
+            <div class="card-body">
+              <h5 class="card-title">Business Applications Support</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <div class="card h-100">
+            <img src="{% static '/images/automation.png'%}" class="card-img-top" alt="automation" width="300" height="250">
+            <div class="card-body">
+              <h5 class="card-title">Automation of Business Processes</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" style="text-align: center;">
+          <div class="card h-100">
+            <img src="{% static '/images/Cybersecurity.png' %}" class="card-img-top" width="300" height="250" alt="network">
+            <div class="card-body">
+              <h5 class="card-title">Cyber Security</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;" >
+          <div class="card h-100">
+            <img src="{% static '/images/dr.png'%}" class="card-img-top" alt="applications" width="300" height="250">
+            <div class="card-body">
+              <h5 class="card-title">Disaster Recovery and Data Management</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <div class="card h-100">
+            <img src="{% static '/images/train.png'%}" class="card-img-top" alt="automation" width="300" height="250">
+            <div class="card-body">
+              <h5 class="card-title">Training and Knowledge Base Management</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+          </div>
+        </div>
+      </div>
+    <h3>Contact Us:</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
 {% endblock %} 
