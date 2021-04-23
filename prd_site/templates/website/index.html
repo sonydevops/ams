@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Welcome{% endblock %}
 {% block content %}
 <div class="header">
@@ -6,26 +7,38 @@
     <p class="lead">Let's supercharge your operations TODAY!!!</p>
     <p><a href="#" type="button" class="btn btn-success btn-md">GET STARTED</a></p>
 </div>
-<div class="card-deck">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Online ICT Support</h4>
-                <p class="card-text">IT issues bugging you?</p>
-                <a href="#" type="button" class="btn btn-success">Get in Touch</a>
-            </div>
-        </div>
-    <div class="card">
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="text-align: center;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static '/images/IT-support.jpg' %}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title">Share Knowledge</h4>
-            <p class="card-text">AMS, SAP, QMS , EMS operational manuals and more!</p>
+          <h5 class="card-title">Online Tech Support</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+      </div>
     </div>
-    <div class="card">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static '/images/kb.png' %}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title">Online Surveys</h4>
-            <p class="card-text">Get access to the latest SonySugar Corporate polls.</p>
+          <h5 class="card-title">Access to Knowledge Base</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+      </div>
     </div>
-</div>
-
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static '/images/Online-Poll.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Online Polls</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+            <p><button class="btn btn-success">Learn More...</button></p>
+      </div>
+    </div>
+  </div>
+<br>
 {% endblock content %}
